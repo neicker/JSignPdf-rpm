@@ -6,7 +6,7 @@
 
 Name:           JSignPdf
 Version:        2.0.0
-Release:        3
+Release:        4
 Summary:        Sign PDF documents
 License:        LGPL-2.1 and MPL-1.1
 Group:          Productivity/Publishing/PDF
@@ -69,8 +69,8 @@ update-desktop-database
 %{_bindir}
 
 %changelog
-* Thu Dec  9 2021 Norbert Eikcer <norbert.eicker@gmx.de>
+* Thu Dec  9 2021 Norbert Eicker <norbert.eicker@gmx.de>
 - Add starter script to PATH
 - Improve spec-file (copyrights, etc.)
-* Wed Dec  8 2021 Norbert Eikcer <norbert.eicker@gmx.de>
+* Wed Dec  8 2021 Norbert Eicker <norbert.eicker@gmx.de>
 - Initial version
