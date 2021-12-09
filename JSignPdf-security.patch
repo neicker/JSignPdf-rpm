@@ -1,0 +1,28 @@
+diff -ur jsignpdf-2.0.0.orig/conf/conf.properties jsignpdf-2.0.0/conf/conf.properties
+--- jsignpdf-2.0.0.orig/conf/conf.properties	2021-06-16 21:42:56.000000000 +0200
++++ jsignpdf-2.0.0/conf/conf.properties	2021-12-09 14:34:55.998128962 +0100
+@@ -25,7 +25,7 @@
+ # 	2.5.29.19 - Basic Constraints
+ # 	2.5.29.29 - Certificate Issuer
+ # 	2.5.29.37 - Extended Key Usage
+-certificate.checkCriticalExtensions=false
++certificate.checkCriticalExtensions=true
+ 
+ # pkcs11config.path is a path (either absolute or relative to the working directory) to PKCS#11 provider configuration;
+ # if the file exists it's used to register a new SunPKCS11 provider instance
+@@ -34,7 +34,7 @@
+ 
+ # relax.ssl.security is a true/false flag (false is default) which can disable some SSL checks. If the value is true,
+ # then for instance the JSignPDF will trust all server certificates when making requests to TSA or OCSP.
+-relax.ssl.security=true
++relax.ssl.security=false
+ 
+ # pdf2image.libraries is a comma-separated list of libraries, which should be used to retrieve PDF page preview. The order
+ # does matter here. The first successfully generated image wins. Supported library names are jpedal, pdfbox and pdfrenderer
+@@ -43,4 +43,4 @@
+ 
+ # tsa.hashAlgorithm is a default hash algorithm name used when requesting time-stamp from a TSA (SHA-1, SHA-256, SHA-384, SHA-512, ...)
+ # Default value: 'SHA-1'
+-tsa.hashAlgorithm=SHA-1
+\ No newline at end of file
++tsa.hashAlgorithm=SHA-512
