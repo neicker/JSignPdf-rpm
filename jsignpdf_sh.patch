@@ -1,0 +1,9 @@
+diff -ur jsignpdf-2.0.0.orig/jsignpdf.sh jsignpdf-2.0.0/jsignpdf.sh
+--- jsignpdf-2.0.0.orig/jsignpdf.sh	2021-06-16 21:42:56.000000000 +0200
++++ jsignpdf-2.0.0/jsignpdf.sh	2021-12-08 23:04:32.441798882 +0100
+@@ -15,4 +15,4 @@
+   JAVA_OPTS="$JAVA_OPTS --add-exports jdk.crypto.cryptoki/sun.security.pkcs11=ALL-UNNAMED --add-exports jdk.crypto.cryptoki/sun.security.pkcs11.wrapper=ALL-UNNAMED --add-exports java.base/sun.security.action=ALL-UNNAMED --add-exports java.base/sun.security.rsa=ALL-UNNAMED --add-opens java.base/sun.security.util=ALL-UNNAMED"
+ fi
+ 
+-"$JAVA" $JAVA_OPTS "-Djsignpdf.home=$DIR" -jar "$DIR/JSignPdf.jar" $@ 
++"$JAVA" $JAVA_OPTS "-Djsignpdf.home=$DIR" -jar "$DIR/JSignPdf.jar" "$@"
