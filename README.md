@@ -1,7 +1,7 @@
 # JSignPdf build helpers
 ## spec file et al. to build RPMs of the JSignPdf application
 
-JSignPdf is a tool written in Java to cryptographically sign PDF in
+[JSignPdf](http://jsignpdf.sourceforge.net/) is a tool written in Java to cryptographically sign PDF in
 Linux (and most other OSes capable to run Java). This project collects
 files and patches to build the RPM but not the actual release data of
 JSignPdf.
