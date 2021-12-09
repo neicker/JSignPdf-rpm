@@ -1,6 +1,7 @@
 # JSignPdf build helpers
-## spec file et al. to build RPMs of the JSignPdf application
+spec file et al. to build RPMs of the JSignPdf application
 
+### Description
 [JSignPdf](http://jsignpdf.sourceforge.net/) is a tool written in Java to cryptographically sign PDF in
 Linux (and most other OSes capable to run Java). This project collects
 files and patches to build the RPM but not the actual release data of
@@ -10,6 +11,7 @@ This is only tested for openSUSE (actually LEAP 15.2 and 15.3) but
 should work as well for other versions or Fedora and RedHat in
 principle. Feedback is welcome.
 
+### Building
 To actually build an RPM the following steps are required:
 ```
 mkdir -p ~/rpmbuild/SPECS
