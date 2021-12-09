@@ -6,7 +6,7 @@
 
 Name:           JSignPdf
 Version:        2.0.0
-Release:        2
+Release:        3
 Summary:        Sign PDF documents
 License:        LGPL-2.1 and MPL-1.1
 Group:          Productivity/Publishing/PDF
@@ -58,6 +58,7 @@ update-desktop-database
 
 %files
 %defattr(-,root,root)
+%dir %{_libexecdir}/%{name}
 %{_libexecdir}/%{name}/*.jar
 %{_libexecdir}/%{name}/jsignpdf.sh
 %dir %{_libexecdir}/%{name}/conf
